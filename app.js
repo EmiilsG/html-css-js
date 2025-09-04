@@ -14,3 +14,10 @@ function izvadaSkaitli() {
 
 
 document.getElementById('klikšķināt').addEventListener('click', izvadaSkaitli);
+
+Element.addEventListener("click", myFunction);
+
+
+function myFunction(){
+    alert ()
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liela kontaktforma</title>
+</head>
+
+<body>
+
+    <h2>Sazinies ar mums</h2>
+
+    <form id="kontaktforma">
+        <label for="vards">Vārds:</label><br>
+        <input type="text" name="vards" required><br><br>
+
+        <label for="epasts">E-pasts:</label><br>
+        <input type="email" name="epasts" required><br><br>
+
+        <label for="zina">Ziņa:</label><br>
+        <textarea name="zina" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Sūtīt">
+    </form>
+
+    <script>
+        document.getElementById('kontaktforma').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            // Konvertē FormData uz parastu objektu
+            const data = Object.fromEntries(formData.entries());
+
+            console.log(data); // Visi formas dati kā objekts
+        });
+    </script>
+
+</body>
+
+</html>
