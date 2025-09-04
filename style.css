@@ -1,8 +1,17 @@
 h1{
-    color: blue;
+    color: red;
     text-align: center;
 
 }
+p{
+    text-align: center;
+    margin: auto;
+}
+ul{
+    text-align: center;
+    margin:auto
+}
+
 p{
     text-align: center;
 }
@@ -14,7 +23,8 @@ body{
     background-color: aqua;
 }
 button {
-    background-color: #04AA6D; /* Green */
+    
+    background-color: #04AA6D;
     border: none;
     color: white;
     padding: 15px 32px;
